@@ -47,4 +47,7 @@ background: linear-gradient(127deg, rgba(40,61,61,0.773546918767507) 31%, rgba(5
     .gap-2{
         gap:1.5rem;
     }
+    .navbar{
+        
+    }
 </style>
