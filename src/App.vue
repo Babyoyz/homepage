@@ -50,5 +50,6 @@ body,
 html {
     height: 100%;
     background: #c2ffa8 !important;
+    background-image: none;
 }
 </style>
