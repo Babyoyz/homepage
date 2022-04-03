@@ -3,8 +3,8 @@
             <div class="container">
                 <div class="d-flex">
                     <img src="../assets/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top gap-2">
-                    <a class="navbar-brand fw-bold align-self-center" href="#">
-                    My World Animal
+                    <a class="navbar-brand fw-bold align-self-center text-logo" href="#">
+                    Cute animal world
                   </a>
                 </div>
                
@@ -14,7 +14,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
+                    <a :class="currentRouteName === 'Home' ? 'nav-link nav-link-active text-decoration-underline':'nav-link'" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" @click="hrefsection('about')">Intoduce</a>
@@ -30,7 +30,11 @@
 
 <script>
 export default {
-
+computed: {
+    currentRouteName() {
+        return this.$route.name;
+    }
+},
     methods:{
         hrefsection(params){
             window.location.href =`#${params}`
@@ -50,5 +54,18 @@ background: linear-gradient(127deg, rgba(40,61,61,0.773546918767507) 31%, rgba(5
     }
     .gap-2{
         gap:1.5rem;
+    }
+    .nav-link{
+        color:black
+    }
+    .nav-link-active{
+        color:black;
+        font-weight: bold;
+        text-decoration: dashed;
+    }
+    .text-logo{
+        font-family: 'Bebas Neue', cursive;
+        color: black;
+        font-size: 2rem;
     }
 </style>

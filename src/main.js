@@ -5,11 +5,9 @@ import 'aos/dist/aos.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
-
-
+import router from './router'
 
 
 export const app = createApp(App)
 app.AOS = new AOS.init();
-
-app.use(AOS).mount('#app')
+app.use(AOS).use(router).mount('#app')
