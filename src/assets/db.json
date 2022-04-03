@@ -1,0 +1,42 @@
+{
+    "statusCode":"OK",
+    "data":[
+        {
+            "no":1,
+            "name":"Tiger",
+            "img":"https://static.bangkokpost.com/media/content/20200219/c1_1860789_200219162635_700.jpg",
+            "Type":"1"
+        },
+        {
+            "no":2,
+            "name":"Lion",
+            "img":"https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg",
+            "Type":"1"
+        },
+        {
+            "no":3,
+            "name":"Whale",
+            "img":"https://themomentum.co/wp-content/uploads/2021/03/Whale-web.jpg",
+            "Type":"2"
+        },
+        {
+            "no":4,
+            "name":"Dolphin",
+            "img":"https://anocha01.files.wordpress.com/2013/01/e0b8a5e0b8a1e0b985.jpg",
+            "Type":"2"
+        },
+        {
+            "no":5,
+            "name":"Zebra",
+            "img":"https://upload.wikimedia.org/wikipedia/commons/9/96/Common_zebra_1.jpg",
+            "Type":"1"
+        },
+        {
+            "no":6,
+            "name":"King cobra",
+            "img":"https://sites.google.com/site/yuiyui0990258133/_/rsrc/1474791365679/jhhjgchgj/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg?height=239&width=320",
+            "Type":"3"
+        }
+
+    ]
+}

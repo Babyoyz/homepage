@@ -5,7 +5,7 @@
             <div class="col-md-6 p-sm-5 mb-3 d-flex justify-content-center"
             data-aos="fade-right"
              >
-                <img src="../assets/amimal_about.jpg" class="w-100" />
+                <img src="../assets/amimal_about.jpg" class="w-100 align-self-center" />
             </div>
             <div
                 class="col-md-6 p-sm-5 mb-3"
@@ -20,14 +20,14 @@
             <div class="col-md-6 mb-3 p-sm-sm-5 d-flex justify-content-center" 
             data-aos="fade-down"
             >
-                <img src="../assets/2.jpg" class="w-100" />
+                <img src="../assets/2.jpg" class="w-100 align-self-center" />
             </div>
         </div>
            <div class="row" v-else>
             <div
                 class="col-md-6 p-sm-5 mb-3 d-flex justify-content-center"
             data-aos="fade-right"
-            ><img src="../assets/2.jpg" class="w-100" />
+            ><img src="../assets/2.jpg" class="w-100 align-self-center" />
             </div>
             <div class="col-md-6 mb-3 p-sm-5 align-self-center"
             data-aos="fade-down"
