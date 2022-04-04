@@ -1,7 +1,7 @@
 <script setup>
 import Carousel from '../components/Carousel.vue'
 import About from '../components/About.vue'
-// import Carouselautosilder from '../components/Carouselautosilder.vue'
+import Carouselautosilder from '../components/Carouselautosilder.vue'
 import ListAnimal from '../components/ListAnimal.vue'
 import ComponentNew from '../components/NewsComponent.vue'
 import SeachComponentVue from '../components/SeachComponent.vue'
@@ -16,7 +16,7 @@ import SeachComponentVue from '../components/SeachComponent.vue'
         <About />
       </section>
       <section id="" data-aos="flip-up">
-        <!-- <Carouselautosilder /> -->
+        <Carouselautosilder />
       </section>
       <section data-aos="zoom-in" id="list-animal">
         <ListAnimal />

@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import SwiperClass, { Pagination, Autoplay } from 'Swiper'
+import SwiperClass, { Pagination, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 
 import 'swiper/css'
