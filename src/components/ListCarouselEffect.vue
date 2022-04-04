@@ -41,13 +41,18 @@ export default {
 methods:{
     async Calldata (){
 
-        const  data  = await fetch('/src/assets/db.json')
+        const  data  = await fetch('https://api.jsonbin.io/v3/b/624a88a4fdd14a0f467f83cd',{
+            headers: {
+                'X-Master-Key': '$2b$10$cOkkaF1DliBxOf9GqPpAV.55Bx6rNPwXdkjsFttKR8VpONmr9V/46',
+            }
+        })
 
         const result = await data.json()
 
-            this.array = result.data
+        console.log(result)
+            this.array = result.record.data
 
-            this.arraydeault = result.data
+            this.arraydeault = result.record.data
    
     },
 

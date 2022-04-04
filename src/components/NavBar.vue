@@ -47,7 +47,7 @@ computed: {
 <style scoped>
     .bg-navbar{
        background: rgb(40,61,61);
-background: linear-gradient(127deg, rgba(40,61,61,0.773546918767507) 31%, rgba(57,255,1,0.49343487394957986) 90%);
+        background: linear-gradient(127deg, rgba(40,61,61,0.773546918767507) 31%, rgba(57,255,1,0.49343487394957986) 90%);
     }
     .img-icons{
         width: 40px;
