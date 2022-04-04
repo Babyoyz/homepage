@@ -9,6 +9,6 @@ import router from './router'
 
 export const app = createApp(App)
 app.use(router)
-app.AOS = new AOS.init();
+app.AOS = new AOS.init()
 app.use(AOS)
 app.mount('#app')

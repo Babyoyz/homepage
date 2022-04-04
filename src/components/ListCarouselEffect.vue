@@ -46,37 +46,33 @@
 
 <script>
 export default {
-    created() {
-        this.Calldata()
-    },
-    data(){
-        return{
-            array:[],
-            filterclass:'99'
+  created() {
+    this.Calldata()
+  },
+  data() {
+    return {
+      array: [],
+      filterclass: '99'
+    }
+  },
+  methods: {
+    async Calldata() {
+      const data = await fetch(
+        'https://api.jsonbin.io/v3/b/624a88a4fdd14a0f467f83cd',
+        {
+          headers: {
+            'X-Master-Key':
+              '$2b$10$cOkkaF1DliBxOf9GqPpAV.55Bx6rNPwXdkjsFttKR8VpONmr9V/46'
+          }
         }
-    },
-methods:{
-    async Calldata (){
-
-        const  data  = await fetch('https://api.jsonbin.io/v3/b/624a88a4fdd14a0f467f83cd',{
-            headers: {
-                'X-Master-Key': '$2b$10$cOkkaF1DliBxOf9GqPpAV.55Bx6rNPwXdkjsFttKR8VpONmr9V/46',
-            }
-        })
+      )
 
       const result = await data.json()
 
-<<<<<<< HEAD
-      this.array = result.data
+      console.log(result)
+      this.array = result.record.data
 
-      this.arraydeault = result.data
-=======
-        console.log(result)
-            this.array = result.record.data
-
-            this.arraydeault = result.record.data
-   
->>>>>>> 93e726fd7e3c70ea61646a42e18a33fe0f44f9b6
+      this.arraydeault = result.record.data
     },
 
     filters(prarms) {

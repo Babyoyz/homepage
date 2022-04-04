@@ -81,27 +81,31 @@ export default {
 </script>
 
 <style scoped>
-    .bg-navbar{
-       background: rgb(40,61,61);
-        background: linear-gradient(127deg, rgba(40,61,61,0.773546918767507) 31%, rgba(57,255,1,0.49343487394957986) 90%);
-    }
-    .img-icons{
-        width: 40px;
-    }
-    .gap-2{
-        gap:1.5rem;
-    }
-    .nav-link{
-        color:black
-    }
-    .nav-link-active{
-        color:black;
-        font-weight: bold;
-        text-decoration: dashed;
-    }
-    .text-logo{
-        font-family: 'Bebas Neue', cursive;
-        color: black;
-        font-size: 2rem;
-    }
+.bg-navbar {
+  background: rgb(40, 61, 61);
+  background: linear-gradient(
+    127deg,
+    rgba(40, 61, 61, 0.773546918767507) 31%,
+    rgba(57, 255, 1, 0.49343487394957986) 90%
+  );
+}
+.img-icons {
+  width: 40px;
+}
+.gap-2 {
+  gap: 1.5rem;
+}
+.nav-link {
+  color: black;
+}
+.nav-link-active {
+  color: black;
+  font-weight: bold;
+  text-decoration: dashed;
+}
+.text-logo {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  font-size: 2rem;
+}
 </style>
