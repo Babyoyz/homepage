@@ -1,24 +1,23 @@
 <template>
-<div class="bg-green p-5">
+  <div class="bg-green p-5">
     <div class="container">
-       <h2 class="text-center fw-bold">Filter-List</h2>
-        <SreachList /> 
+      <h2 class="text-center fw-bold">Filter-List</h2>
+      <SreachList />
     </div>
-</div>
+  </div>
 </template>
 
 <script>
 import SreachList from './ListCarouselEffect.vue'
 export default {
-components:{
+  components: {
     SreachList
-}
+  }
 }
 </script>
 
 <style scoped>
-
-.bg-green{
-     background: #c2ffa8 !important;
+.bg-green {
+  background: #c2ffa8 !important;
 }
 </style>

@@ -1,28 +1,27 @@
 <template>
   <div v-show="visible">
-     <a @click="scrollToTop()" class="bottom-right">
-         <img src="../assets/backtotop.png">
-     </a>
-
+    <a @click="scrollToTop()" class="bottom-right">
+      <img src="../assets/backtotop.png" />
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-    data(){
-        return{
-              visible: false
-        }
+  data() {
+    return {
+      visible: false
+    }
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0)
     },
- methods: {
-        scrollToTop() {
-            window.scrollTo(0, 0);
-        },
-        scrollListener: function (e) {
+    scrollListener: function (e) {
       this.visible = window.scrollY > 150
     }
-        },
-         mounted: function () {
+  },
+  mounted: function () {
     window.addEventListener('scroll', this.scrollListener)
   }
 }
@@ -36,7 +35,7 @@ export default {
   cursor: pointer;
   z-index: 100;
 }
-img{
-    width: 5rem;
+img {
+  width: 5rem;
 }
 </style>
